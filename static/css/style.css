@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    overflow:hidden;
+    background:black;
+}
+
+#messageBox{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:420px;
+
+    padding:25px;
+
+    background:rgba(15,15,25,.95);
+
+    border:2px solid #ff4d88;
+
+    border-radius:18px;
+
+    color:white;
+
+    text-align:center;
+
+    display:none;
+
+    z-index:9999;
+
+    font-family:Arial, sans-serif;
+}
+
+#messageBox h2{
+    color:#ff7db8;
+    margin-top:0;
+}
+
+#messageText{
+    font-size:18px;
+    line-height:1.6;
+}
+
+#closeBtn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+}
