@@ -839,7 +839,7 @@ galaxyGroup.add(shootingStar)
 const raycaster = new THREE.Raycaster();
 
 // Hace más fácil detectar estrellas (Points)
-raycaster.params.Points.threshold = 3;
+raycaster.params.Points.threshold = 5;
 
 const mouse = new THREE.Vector2();
 window.addEventListener("click", function(event){
@@ -949,7 +949,7 @@ if (!shootingActive && shootingTimer > 300) {
 
    controls.update()
 
-   galaxyGroup.rotation.y += 0.008;
+   galaxyGroup.rotation.y += 0.00008;
 
    estrellasEspeciales.forEach((estrella) => {
 
